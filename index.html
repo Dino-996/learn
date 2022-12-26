@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!--Caratteri utilizzati-->
+    <meta charset="UTF-8">
+    <!--Tag obsoleto per internet explorer-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Imposta le regole con cui il browser gestirà le dimensioni della pagina-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap'); </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Prova javascript</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">Roy Riddle</div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#works">Works</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Hi I'm <br> Roy Riddle</h1>
+            <h3>Street photography <br> based in Milan</h3>
+            <a class="hero-cta" href="#">Discover My Works</a>
+        </div>
+    </section>
+
+    <section class="works-menu">
+        <div class="container">
+            <ul>
+                <li>
+                    <a class="button" href="#">Bottone 1</a>
+                </li>
+                <li>
+                    <a  class="button" href="#">Bottone 2</a>
+                </li>
+                <li>
+                    <a class="button" href="#">Bottone 3</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="works">
+        <a class="anchos" id="works"></a>
+        <div class="container">
+
+            <div class="works-item">
+                <div class="works-item-tags">Street fotography \ London \ 2020</div>
+                <h2>Through the glass</h2>
+            </div>
+
+            <div class="work-info">
+                <div class="work-info-label">About</div>
+                <div class="work-info-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas cum ea amet, odio maxime, a nobis dolorem</p>
+                </div>
+            </div>
+            
+            <div class="work-info">
+                <div class="work-info-label">Output</div>
+                <div class="work-info-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas cum ea amet, odio maxime, a nobis dolorem, vitae doloribus ipsam deleniti neque? Repudiandae dignissimos optio quidem eaque! Illum, deleniti!</p>
+                </div>
+            </div>
+        
+            <div class="images">
+                <img class="images-right" src="img/img1.jpg" alt="immagine1">
+                <img src="img/img2.png" alt="immagine2">
+                <img class="images-left" src="img/img3.png" alt="immagine3">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacts">
+        <a class="anchos" id="contacts"></a>
+        <div class="container contacts-content">
+            <div class="contacts-about">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, tempore. Velit corporis amet blanditiis laborum officiis deserunt nisi voluptate commodi.</p>
+            </div>
+            <div class="contacts-form">
+                <form name="contacts" netlify>
+                    <label class="input-label" for="name">Full Name</label>
+                    <input name="name" id="name" class="input-field"  type="text" placeholder="Name Surname" value="" required>
+
+                    <label class="input-label" for="email">E-mail</label>
+                    <input name="email" id="email" class="input-field" placeholder="example@mail.com" type="email" required>
+
+                    <label class="input-label" for="subject">Subject</label>
+                    <input name="subject" id="subject" class="input-field" placeholder="example subject" type="text" required>
+
+                    <label class="input-label" for="text">Message <span>Optional (Max 50 chars)</span></label>
+                    <textarea name="text" id="text" class="input-textarea" placeholder="example message" maxlength="50"></textarea>
+
+                    <button type="reset" class="button">Delete</button>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                Roy Riddle copyright &copy; 2022
+            </div>
+        </div>
+    </footer>
+
+    <div id="backButton" class="back-to-top"></div>
+
+    <script src="script.js"></script>
+</body>
+<script type="text/javascript" src="index.js">
+</script>
+
+</html>
